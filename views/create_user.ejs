@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs')%>
+    </head>
+    <body class="login">
+        <div class="flex justify-center">
+            <h1 class="h1_login text-5xl text-gray-600 pt-20">
+                Welcome to Blogs
+            </h1>
+        </div>
+
+        <div class="create-blog content">
+            <form action="/signup/verify_user" method="POST">
+              <label for="title">Username:</label>
+              <input type="text" id="title" name="username" required>
+              <label for="snippet">Password:</label>
+              <input type="text" id="snippet" name="password" required>
+              <label for="body">Confirm Password:</label>              
+              <input type="text" id="snippet" name="confirmation" required>
+              <input class="pb-6" type="submit" value="Send Email">
+            </form>
+          </div>
+        <h1 class="h1_login text-5xl text-gray-600 pt-20"> Invalid Request </h1>
+
+
+       
+    </body>
+</html>

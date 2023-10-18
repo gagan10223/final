@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs')%>
+    </head>
+    <body>
+        <%- include('./partials/body.ejs')%>
+        <div class="flex">
+            <div class="inline p-6 pl-16 w-5/6">
+                <h1 class="text-3xl text-gray-600 pl-2"><%= details.title %></h1>
+                <h1 class="text-gray-500 pl-2"><%= details.body %></h1>
+            </div>
+            <div class=" p-8 flex">
+                <div class="p-2">
+                    <a class="edit" href="/edit/<%=details._id%>" onclick="edit()" id="edit" data-doc="<%= details._id %>">Edit</a>
+                </div>
+                <div class="p-2">
+                    <a class="edit" onclick="delete_('<%=details._id %>')" id="delete" data-doc="<%= details._id %>">Delete</a>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs')%>
+    </body>
+    <script>
+        function delete_(id)
+        {
+            const trash = document.querySelector('#delete')
+
+            const end = `/details/${id}`
+
+            fetch(end,{
+                method:'DELETE',
+            })
+            .then(result => result.json())
+            .then(data => window.location.href = data.redirect)
+            .catch(err=> console.log(err))
+        }
+
+    </script>
+</html>

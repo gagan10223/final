@@ -1,0 +1,101 @@
+.create-blog form{
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+
+    a:hover{
+    color: rgb(155, 125, 114);
+    }
+    a:hover h1{
+    color: rgb(163, 116, 143);
+    }
+
+    .create-blog input,
+    .create-blog textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1.5px solid #cbbfbf
+    }
+    .create-blog label{
+    display: block;
+    margin-top: 24px;
+    }
+    textarea{
+    height: 120px;
+    }
+    .create-blog button{
+    margin-top: 20px;
+    background: rgb(235, 87, 116);
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    }
+    button:hover{
+            background: rgb(195, 41, 71);
+    }
+    /* Apply these styles to your footer element */
+    footer {
+    color: #ccc; /* Optional: Set text color */
+    text-align: center;
+    padding: 50px 0; /* Optional: Add padding for spacing */
+    }
+    .create-blog input[type="submit"] {
+margin-top: 20px;
+background: rgb(235, 87, 116);
+color: white;
+padding: 6px;
+border: 0;
+font-size: 1.2em;
+cursor: pointer;
+}
+.create-blog a{
+    margin-top: 20px;
+background: rgb(235, 87, 116);
+color: white;
+padding: 6px;
+border: 0;
+font-size: 1.2em;
+cursor: pointer;
+display: block;
+width: 100%;
+margin: 10px 0;
+padding: 6px;
+border: 1.5px solid #cbbfbf;
+text-align:center;
+}
+
+.justify-centre {
+    margin: 0 auto;
+    text-align: start; /* For text alignment inside the div */
+  }
+
+.check a{
+  border-left: 6px solid rgb(235, 87, 116); ;
+  display: block;
+  margin:40px 0;
+  padding-left: 30px;
+}
+.login{
+  background-color: rgb(245, 237, 250);
+}
+
+.check a:hover{
+  border-left: 6px solid rgb(112, 41, 163);
+}
+
+a.edit{
+  background: rgb(235, 87, 116);
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+a.edit:hover{
+  background: rgb(195, 41, 71);
+}

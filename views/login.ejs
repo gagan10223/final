@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs')%>
+    </head>
+    <body class="login">
+        <div class="flex justify-center">
+            <h1 class="h1_login text-5xl text-gray-600 pt-20 pb-10">
+                Welcome to Blogs
+            </h1>
+        </div>
+        <div>
+
+
+        <div class="create-blog content">
+            <form action="/login" method="POST">
+              <label class="pb-2" for="title"><h1 class="text-2xl text-gray-600">Username:</h1></label>
+              <input class="pb-6" type="text" id="title" name="username" required>
+              <label class="pb-2" for="title"><h1 class="text-2xl text-gray-600">Password:</h1></label>
+              <input class="pb-6" type="text" id="title" name="password" required>
+              <input class="pb-6" type="submit" value="Log in"> 
+            </form>
+          </div>
+       
+    </body>
+</html>
