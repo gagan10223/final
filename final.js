@@ -8,7 +8,7 @@ const mongo_session = require('connect-mongodb-session')(session)
 const app = express();
 
 mongoose.connect(dburi,{useNewUrlParser:true,useUnifiedTopology:true})
-.then(result => app.listen(5000))
+.then(result => app.listen(3000))
 .catch(err => console.log(err))
 console.log('error')
 

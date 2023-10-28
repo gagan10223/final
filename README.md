@@ -1,0 +1,5 @@
+This is a Node.js web application built with Express and MongoDB to manage user sessions and perform various actions. To run the application locally, clone the repository from GitHub and navigate to the project directory. Then, install the required dependencies using npm and set up your MongoDB database, replacing the 'dburi' variable in 'app.js' with your MongoDB connection string. Start the application with 'npm start' and access it through your web browser at 'http://localhost:3000'.
+
+The application features session management using Express and MongoDB, serves static files from the 'public' directory, utilizes the EJS template engine for rendering views, and provides routes and controllers for different functionalities. It also employs the method-override middleware to support HTTP methods like PUT and DELETE.
+
+To use the application, explore its routes and features through your web browser, checking the 'public' directory for static files. Feel free to customize the application to suit your specific project needs. The project's dependencies include Express.js, MongoDB, EJS, Method-override, and Connect-mongodb-session
